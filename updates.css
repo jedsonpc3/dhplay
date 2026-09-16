@@ -1,0 +1,16 @@
+.update-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 28px;
+  background: rgba(16, 34, 54, .86);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  color: var(--muted);
+  font-size: .84rem;
+}
+.update-banner #appUpdateStatus { flex: 1; }
+.update-banner #versionLabel { white-space: nowrap; color: var(--text); }
+@media (max-width: 720px) {
+  .update-banner { padding: 9px 16px; flex-wrap: wrap; }
+  .update-banner #appUpdateStatus { flex-basis: 100%; }
+}

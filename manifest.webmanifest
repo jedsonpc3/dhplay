@@ -1,0 +1,22 @@
+{
+  "name": "DHPlay - Gestão de Assinaturas",
+  "short_name": "DHPlay",
+  "description": "Controle de clientes, planos, assinaturas e vencimentos da DHPlay.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "orientation": "any",
+  "categories": ["business", "productivity", "finance"],
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ],
+  "shortcuts": [
+    {"name":"Clientes","url":"./?view=clients"},
+    {"name":"Calendário","url":"./?view=calendar"}
+  ]
+}
+

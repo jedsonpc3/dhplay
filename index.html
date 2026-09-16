@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="DHPlay — gestão de clientes, planos e assinaturas de streaming.">
+  <title>DHPlay | Gestão de assinaturas</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="reports.css">
+  <link rel="stylesheet" href="updates.css">
+</head>
+<body>
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <img src="dhplay-banner-v2.png" alt="DHPlay Streamers" class="login-logo">
+      <p class="eyebrow">Central de assinaturas</p>
+      <h1>Acesse seu painel</h1>
+      <p class="muted">Clientes, planos, vencimentos e recebimentos em um só lugar.</p>
+      <form id="loginForm" class="stack">
+        <label>E-mail<input id="loginEmail" type="email" autocomplete="email" required placeholder="seu@email.com"></label>
+        <label>Senha<input id="loginPassword" type="password" autocomplete="current-password" required minlength="6" placeholder="••••••••"></label>
+        <p id="loginError" class="form-error hidden"></p>
+        <button class="primary-button" type="submit">Entrar</button>
+      </form>
+      <button id="localAccessBtn" class="local-access-button" type="button"><span aria-hidden="true">▶</span><span><strong>Acessar o app agora</strong><small>Continuar em modo local, sem Supabase</small></span></button>
+      <small>O acesso remoto é ativado ao preencher o arquivo <code>supabase-config.js</code>.</small>
+    </div>
+  </section>
+
+  <div id="appShell" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><img src="icon-192.png" alt="DHPlay"><div><strong>DHPlay</strong><small>Gestão de assinaturas</small></div></div>
+      <nav id="nav" class="nav" aria-label="Navegação principal"></nav>
+      <div class="sidebar-foot"><span id="syncBadge" class="status-pill local">Local</span><button id="logoutBtn" class="ghost-button" type="button">Sair</button></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="menuBtn" class="icon-button menu-button" type="button" aria-label="Abrir menu">☰</button>
+        <div><p id="pageEyebrow" class="eyebrow">Visão geral</p><h1 id="pageTitle">Painel</h1></div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Buscar cliente ou telefone"></label>
+          <button id="installBtn" class="ghost-button hidden" type="button">Instalar app</button>
+          <button id="quickAddBtn" class="primary-button" type="button">+ Nova assinatura</button>
+        </div>
+      </header>
+      <div id="updateBanner" class="update-banner">
+        <span id="appUpdateStatus">Aplicativo pronto para uso offline.</span>
+        <span id="versionLabel">Versão local</span>
+        <button id="checkUpdateBtn" class="ghost-button" type="button">Verificar atualização</button>
+      </div>
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog id="recordDialog" class="dialog">
+    <form id="recordForm" method="dialog">
+      <div class="dialog-head"><div><p id="dialogEyebrow" class="eyebrow">Cadastro</p><h2 id="dialogTitle">Novo registro</h2></div><button class="icon-button" value="cancel" aria-label="Fechar">×</button></div>
+      <div id="formFields" class="form-grid"></div>
+      <div class="dialog-actions"><button class="ghost-button" value="cancel">Cancelar</button><button id="saveRecordBtn" class="primary-button" value="default">Salvar</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="confirmDialog" class="dialog compact">
+    <form method="dialog"><h2>Excluir registro?</h2><p id="confirmText" class="muted"></p><div class="dialog-actions"><button class="ghost-button" value="cancel">Cancelar</button><button class="danger-button" value="confirm">Excluir</button></div></form>
+  </dialog>
+
+  <input id="importFile" class="hidden" type="file" accept="application/json">
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="offline-db.js" defer></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="update-checker.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
+
