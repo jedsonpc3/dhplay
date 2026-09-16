@@ -38,3 +38,12 @@ input[readonly]{background:#122238;color:#c7d8eb;cursor:not-allowed;border-style
   .dialog-actions{position:sticky;bottom:-16px;background:linear-gradient(transparent,var(--panel) 18%);padding:20px 0 2px;margin-top:10px}
   .responsive-table td{grid-template-columns:minmax(82px,31%) minmax(0,1fr)}
 }
+@media(max-height:700px){
+  .login-card{padding:16px 20px;border-radius:20px}
+  .login-logo{height:96px;margin-bottom:10px}
+  .login-card h1{font-size:1.45rem}
+  .login-card .muted{margin-bottom:8px;font-size:.86rem}
+  .login-card .stack{gap:8px;margin:10px 0 8px}
+  .login-card input{padding:9px 11px}
+  .login-card .primary-button{padding:9px 13px}
+}

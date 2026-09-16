@@ -15,6 +15,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Fila offline durável em IndexedDB, com reenvio automático ao reconectar
 - Instalação como aplicativo e verificação de versão
 - Estrutura estática pronta para GitHub Pages
+- Instalador de atalho para Windows, com abertura maximizada em modo aplicativo
 
 ## Configurar Supabase
 
@@ -31,4 +32,18 @@ Crie um repositório, envie estes arquivos para a branch principal e, em Setting
 ## Testar localmente
 
 Por segurança do navegador, abra com um servidor HTTP local (por exemplo, Live Server). O modo “Usar neste dispositivo” funciona sem Supabase; os dados ficam no navegador.
+
+## Instalar o atalho no Windows
+
+Execute `INSTALAR-DHPLAY.bat`. O instalador cria o atalho **DHPlay** na Área de Trabalho e no Menu Iniciar, abrindo a versão publicada maximizada e sem as barras do navegador.
+
+## Sequência de versões
+
+A linha atual começa em `1.1.0`. Para preparar a próxima correção (`1.1.1`, depois `1.1.2` etc.), execute:
+
+```powershell
+.\atualizar-versao.ps1 -Notas "Resumo da atualização"
+```
+
+O script atualiza `version.json` e o cache do service worker em conjunto.
 
