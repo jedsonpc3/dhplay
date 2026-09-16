@@ -23,13 +23,28 @@
       <p class="muted">Clientes, planos, vencimentos e recebimentos em um só lugar.</p>
       <form id="loginForm" class="stack">
         <label>E-mail<input id="loginEmail" type="email" autocomplete="email" required placeholder="seu@email.com"></label>
-        <label>Senha<input id="loginPassword" type="password" autocomplete="current-password" required minlength="6" placeholder="••••••••"></label>
+        <label>Senha<div class="password-row"><input id="loginPassword" type="password" autocomplete="current-password" required minlength="6" placeholder="••••••••"><button id="togglePasswordBtn" class="password-toggle" type="button">Exibir</button></div></label>
+        <button id="forgotPasswordBtn" class="text-button compact-link" type="button">Esqueci minha senha</button>
         <p id="loginError" class="form-error hidden"></p>
         <button class="primary-button" type="submit">Entrar</button>
       </form>
       <button id="localAccessBtn" class="local-access-button" type="button"><span aria-hidden="true">▶</span><span><strong>Acessar o app agora</strong><small>Continuar em modo local, sem Supabase</small></span></button>
       <small>O acesso remoto é ativado ao preencher o arquivo <code>supabase-config.js</code>.</small>
     </div>
+  </section>
+
+  <section id="recoveryScreen" class="login-screen hidden">
+    <form id="recoveryForm" class="login-card">
+      <img class="login-logo" src="dhplay-banner-v2.png" alt="DHPlay Streamers">
+      <p class="eyebrow">SEGURANÇA DA CONTA</p>
+      <h1 id="recoveryTitle">Redefinir senha</h1>
+      <p id="recoverySubtitle" class="muted">Informe e confirme sua nova senha.</p>
+      <div id="recoveryEmailFields" class="stack hidden"><label>E-mail<input id="recoveryEmail" type="email" autocomplete="email"></label></div>
+      <div id="recoveryPasswordFields" class="stack"><label>Nova senha<input id="newPassword" type="password" minlength="8" autocomplete="new-password"></label><label>Confirmar nova senha<input id="confirmPassword" type="password" minlength="8" autocomplete="new-password"></label></div>
+      <p id="recoveryError" class="form-error hidden"></p>
+      <button id="recoverySubmitBtn" class="primary-button" type="submit">Salvar nova senha</button>
+      <button id="backToLoginBtn" class="text-button" type="button">Voltar ao login</button>
+    </form>
   </section>
 
   <div id="appShell" class="app-shell hidden">
@@ -45,6 +60,7 @@
         <div><p id="pageEyebrow" class="eyebrow">Visão geral</p><h1 id="pageTitle">Painel</h1></div>
         <div class="top-actions">
           <label class="search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Buscar cliente ou telefone"></label>
+          <button id="qrAccessBtn" class="ghost-button" type="button">QR acesso</button>
           <button id="installBtn" class="ghost-button hidden" type="button">Instalar app</button>
           <button id="quickAddBtn" class="primary-button" type="button">+ Nova assinatura</button>
         </div>
@@ -68,6 +84,15 @@
 
   <dialog id="confirmDialog" class="dialog compact">
     <form method="dialog"><h2>Excluir registro?</h2><p id="confirmText" class="muted"></p><div class="dialog-actions"><button class="ghost-button" value="cancel">Cancelar</button><button class="danger-button" value="confirm">Excluir</button></div></form>
+  </dialog>
+
+  <dialog id="qrDialog" class="dialog compact qr-dialog">
+    <form method="dialog">
+      <div class="dialog-head"><div><p class="eyebrow">Acesso rápido</p><h2>Link e QR Code</h2></div><button class="icon-button" value="cancel" aria-label="Fechar">×</button></div>
+      <img id="qrImage" class="qr-image" alt="QR Code de acesso ao DHPlay">
+      <p id="qrAccessLink" class="qr-link"></p>
+      <div class="dialog-actions"><button id="copyAccessLinkBtn" class="ghost-button" value="none" type="button">Copiar link</button><a id="openAccessLinkBtn" class="primary-button qr-open-link" target="_blank" rel="noopener">Abrir</a></div>
+    </form>
   </dialog>
 
   <input id="importFile" class="hidden" type="file" accept="application/json">

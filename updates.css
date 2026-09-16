@@ -14,3 +14,17 @@
   .update-banner { padding: 9px 16px; flex-wrap: wrap; }
   .update-banner #appUpdateStatus { flex-basis: 100%; }
 }
+.password-row { display: flex; gap: 8px; align-items: stretch; }
+.password-row input { flex: 1; }
+.password-toggle { min-width: 78px; border: 1px solid var(--line); border-radius: 11px; background: #15263a; color: var(--text); font-weight: 800; }
+.compact-link { margin: -8px 0 0; text-align: left; }
+.qr-image { width: min(320px, 100%); display: block; margin: 4px auto 18px; border-radius: 14px; background: #fff; padding: 12px; }
+.qr-link { color: var(--muted); overflow-wrap: anywhere; text-align: center; }
+.qr-open-link { text-decoration: none; display: inline-flex; align-items: center; }
+.user-admin-grid { display: grid; grid-template-columns: minmax(280px,.75fr) minmax(0,1.25fr); gap: 18px; }
+.access-status { margin: 12px 0 0; color: var(--muted); }
+.idle-session-warning { position: fixed; inset: 0; z-index: 300; display: grid; place-items: center; padding: 20px; background: rgba(0,0,0,.72); backdrop-filter: blur(5px); }
+.idle-session-warning section { width: min(430px,100%); padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); box-shadow: var(--shadow); }
+.idle-session-warning strong { font-size: 1.25rem; }
+.idle-session-warning button { width: 100%; border: 0; border-radius: 11px; padding: 12px; background: linear-gradient(135deg,var(--blue),#326dff); color: #fff; font-weight: 800; }
+@media (max-width: 900px) { .user-admin-grid { grid-template-columns: 1fr; } }
