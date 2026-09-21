@@ -12,3 +12,5 @@ body:has(.login-screen:not(.hidden)){height:100dvh;overflow:hidden}
 .renewal-actions{display:flex!important;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
 .renewal-actions button{white-space:nowrap}
 @media(max-width:720px){.renewal-actions{width:100%;display:grid!important;grid-template-columns:1fr}.renewal-actions button{width:100%}}
+.section-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+@media(max-width:760px){.section-actions{width:100%;display:grid;grid-template-columns:1fr}.section-actions button{width:100%}}
