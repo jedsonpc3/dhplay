@@ -20,5 +20,5 @@ $updated | ConvertTo-Json | Set-Content -LiteralPath $versionFile -Encoding UTF8
 
 $sw = Get-Content -LiteralPath $serviceWorker -Raw
 $sw = [regex]::Replace($sw, "const CACHE='dhplay-v[^']+';", "const CACHE='dhplay-v$next';")
-Set-Content -LiteralPath $serviceWorker -Value $sw -Encoding UTF8
+Set-Content -LiteralPath $serviceWorker -Value ($sw.TrimEnd() + [Environment]::NewLine) -Encoding UTF8 -NoNewline
 Write-Host "Versao atualizada para $next"
