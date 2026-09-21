@@ -47,3 +47,4 @@ input[readonly]{background:#122238;color:#c7d8eb;cursor:not-allowed;border-style
   .login-card input{padding:9px 11px}
   .login-card .primary-button{padding:9px 13px}
 }
+@media(max-width:640px){.renewal-item{align-items:stretch;flex-direction:column}.renewal-item button{width:100%}}

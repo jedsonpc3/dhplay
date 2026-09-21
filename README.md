@@ -9,6 +9,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Cadastro de planos com valor e duração
 - Assinaturas ligando cliente e plano, com situação automática
 - Calendário mensal de vencimentos
+- Mensagens personalizadas de renovação pelo WhatsApp (5 dias antes, no vencimento e 1 dia depois)
 - Backup e restauração em JSON
 - Funcionamento local/offline
 - Login e sincronização remota com Supabase
