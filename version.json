@@ -1,5 +1,5 @@
 {
-  "version": "1.1.5",
-  "deployedAt": "2026-09-21T13:13:57-03:00",
-  "notes": "Emojis compatíveis com o WhatsApp Desktop sem caracteres Unicode de quatro bytes."
+  "version": "1.1.6",
+  "deployedAt": "2026-09-21T15:46:41-03:00",
+  "notes": "Nova identidade visual DHG Play no login, navegação, PWA e instalador Windows, com clientes em ordem alfabética."
 }

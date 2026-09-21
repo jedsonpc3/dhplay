@@ -6,6 +6,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 
 - Painel com indicadores de clientes, receita recorrente e vencimentos
 - Cadastro, edição e exclusão de clientes
+- Clientes e seleções organizados automaticamente em ordem alfabética
 - Cadastro de planos com valor e duração
 - Assinaturas ligando cliente e plano, com situação automática
 - Calendário mensal de vencimentos
@@ -15,6 +16,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Login e sincronização remota com Supabase
 - Fila offline durável em IndexedDB, com reenvio automático ao reconectar
 - Instalação como aplicativo e verificação de versão
+- Identidade visual DHG Play responsiva, com banner, ícones PWA e atalho Windows
 - Estrutura estática pronta para GitHub Pages
 - Instalador de atalho para Windows, com abertura maximizada em modo aplicativo
 
