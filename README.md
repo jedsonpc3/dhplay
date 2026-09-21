@@ -1,4 +1,4 @@
-# DHPlay — Gestão de assinaturas
+# DHGPlay — Gestão de assinaturas
 
 Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos, assinaturas e vencimentos.
 
@@ -12,7 +12,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Calendário mensal de vencimentos
 - Mensagens personalizadas de renovação pelo WhatsApp (5 dias antes, no vencimento e 1 dia depois)
 - Backup e restauração em JSON
-- Funcionamento local/offline
+- Operação em nuvem com suporte offline após a autenticação
 - Login e sincronização remota com Supabase
 - Fila offline durável em IndexedDB, com reenvio automático ao reconectar
 - Instalação como aplicativo e verificação de versão
@@ -34,11 +34,11 @@ Crie um repositório, envie estes arquivos para a branch principal e, em Setting
 
 ## Testar localmente
 
-Por segurança do navegador, abra com um servidor HTTP local (por exemplo, Live Server). O modo “Usar neste dispositivo” funciona sem Supabase; os dados ficam no navegador.
+Por segurança do navegador, abra com um servidor HTTP local (por exemplo, Live Server). O acesso ao painel exige autenticação pela nuvem.
 
 ## Instalar o atalho no Windows
 
-Execute `INSTALAR-DHPLAY.bat`. O instalador cria o atalho **DHPlay** na Área de Trabalho e no Menu Iniciar, abrindo a versão publicada maximizada e sem as barras do navegador.
+Execute `INSTALAR-DHGPLAY.bat`. O instalador cria o atalho **DHGPlay** na Área de Trabalho e no Menu Iniciar, abrindo a versão publicada maximizada e sem as barras do navegador.
 
 ## Sequência de versões
 
