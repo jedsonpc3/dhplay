@@ -1,5 +1,5 @@
 {
-  "version": "1.1.2",
-  "deployedAt": "2026-09-21T11:37:24-03:00",
-  "notes": "Mensagens personalizadas de renovação pelo WhatsApp nos marcos de 5 dias antes, vencimento e 1 dia após."
+  "version": "1.1.3",
+  "deployedAt": "2026-09-21T12:29:31-03:00",
+  "notes": "Correção da codificação dos emojis nas mensagens de renovação do WhatsApp."
 }
