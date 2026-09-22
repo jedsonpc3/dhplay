@@ -1,5 +1,5 @@
 {
-  "version": "1.1.11",
-  "deployedAt": "2026-09-21T21:59:46-03:00",
-  "notes": "Logo ampliada na barra lateral com nome DHGPlay abaixo da imagem"
+  "version": "1.1.12",
+  "deployedAt": "2026-09-21T22:29:03-03:00",
+  "notes": "Exclusão de cliente na edição com proteção de contratos ativos e histórico encerrado"
 }
