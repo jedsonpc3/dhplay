@@ -25,10 +25,14 @@ body:has(.login-screen:not(.hidden)){height:100dvh;overflow:hidden}
 .calendar-legend{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;margin:-4px 0 14px;color:var(--muted);font-size:.75rem;font-weight:700}
 .calendar-legend span{display:inline-flex;align-items:center;gap:6px}
 .calendar-legend i{width:10px;height:10px;border-radius:50%;background:var(--green)}
+.calendar-legend i.scheduled{background:var(--blue)}
 .calendar-legend i.warning{background:var(--yellow)}
 .calendar-legend i.expired{background:#ff8b9a}
 .calendar-legend i.cancelled{background:#8e9aad}
 .calendar-event.active{background:rgba(38,209,149,.16);color:#8bf0ca}
+.calendar-event.scheduled{background:rgba(9,156,255,.16);color:#bfe7ff}
 .calendar-event.expired{background:rgba(255,139,154,.16);color:#ff9dab}
 .calendar-event.cancelled{background:rgba(142,154,173,.16);color:#b8c0cc}
 @media(max-width:760px){.calendar-legend{justify-content:flex-start;gap:8px 12px;margin-bottom:12px}.calendar-legend span{font-size:.7rem}}
+.badge.scheduled{background:rgba(9,156,255,.14);color:#8ed1ff}
+.dialog-actions{flex-wrap:wrap}
