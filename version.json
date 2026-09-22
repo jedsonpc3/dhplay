@@ -1,5 +1,5 @@
 {
-  "version": "1.1.17",
-  "deployedAt": "2026-09-22T18:56:02-03:00",
-  "notes": "Relatório gerencial por início da vigência, filtro de período e remoção do inventário inicial"
+  "version": "1.1.18",
+  "deployedAt": "2026-09-22T19:17:17-03:00",
+  "notes": "Gráfico sem rolagem horizontal e valores verticais dentro das colunas"
 }
