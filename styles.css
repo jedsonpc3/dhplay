@@ -20,3 +20,15 @@ body:has(.login-screen:not(.hidden)){height:100dvh;overflow:hidden}
 #deleteRecordBtn{margin-right:auto}
 .pix-dialog-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.pix-dialog-actions button{padding-inline:9px}
 @media(max-width:520px){.pix-dialog-actions{grid-template-columns:1fr}}
+
+/* Legenda e cores do calendário, inclusive para os pontos compactos no celular. */
+.calendar-legend{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap;margin:-4px 0 14px;color:var(--muted);font-size:.75rem;font-weight:700}
+.calendar-legend span{display:inline-flex;align-items:center;gap:6px}
+.calendar-legend i{width:10px;height:10px;border-radius:50%;background:var(--green)}
+.calendar-legend i.warning{background:var(--yellow)}
+.calendar-legend i.expired{background:#ff8b9a}
+.calendar-legend i.cancelled{background:#8e9aad}
+.calendar-event.active{background:rgba(38,209,149,.16);color:#8bf0ca}
+.calendar-event.expired{background:rgba(255,139,154,.16);color:#ff9dab}
+.calendar-event.cancelled{background:rgba(142,154,173,.16);color:#b8c0cc}
+@media(max-width:760px){.calendar-legend{justify-content:flex-start;gap:8px 12px;margin-bottom:12px}.calendar-legend span{font-size:.7rem}}
