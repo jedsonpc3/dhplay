@@ -1,5 +1,5 @@
 {
-  "version": "1.1.13",
-  "deployedAt": "2026-09-21T23:38:30-03:00",
-  "notes": "Exclusão na edição de planos e assinaturas, valores brasileiros com duas casas e planos em ordem alfabética"
+  "version": "1.1.14",
+  "deployedAt": "2026-09-22T06:16:31-03:00",
+  "notes": "QR Code PIX local, código Copia e Cola e compartilhamento sem exibir a chave na mensagem"
 }

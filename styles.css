@@ -18,3 +18,5 @@ body:has(.login-screen:not(.hidden)){height:100dvh;overflow:hidden}
 .brand img{width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;border-radius:16px;background:#05101f;border:1px solid rgba(9,156,255,.42);box-shadow:0 10px 28px rgba(0,0,0,.38),0 0 28px rgba(9,156,255,.2)}
 .brand strong{font-size:1.45rem;letter-spacing:.02em}.brand small{display:block;margin-top:3px;font-size:.78rem}
 #deleteRecordBtn{margin-right:auto}
+.pix-dialog-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.pix-dialog-actions button{padding-inline:9px}
+@media(max-width:520px){.pix-dialog-actions{grid-template-columns:1fr}}
