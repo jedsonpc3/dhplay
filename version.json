@@ -1,5 +1,5 @@
 {
-  "version": "1.1.15",
-  "deployedAt": "2026-09-22T06:30:00-03:00",
-  "notes": "Plano e valor atual no lembrete, com abertura automática do QR Code PIX após a mensagem"
+  "version": "1.1.16",
+  "deployedAt": "2026-09-22T06:45:00-03:00",
+  "notes": "Correção da formatação da chave PIX e seleção do tipo de chave na Gestão"
 }
