@@ -16,6 +16,7 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Fluxo de caixa mensal com faturamento, custos, resultado líquido e margem operacional
 - Calendário mensal de vencimentos
 - Mensagens personalizadas de renovação pelo WhatsApp (5 dias antes, no vencimento e 1 dia depois)
+- QR Code e chave PIX compartilháveis por WhatsApp na edição e troca de plano
 - Backup e restauração em JSON
 - Operação em nuvem com suporte offline após a autenticação
 - Login e sincronização remota com Supabase
