@@ -1,5 +1,5 @@
 {
-  "version": "1.1.16",
-  "deployedAt": "2026-09-22T06:45:00-03:00",
-  "notes": "Correção da formatação da chave PIX e seleção do tipo de chave na Gestão"
+  "version": "1.1.17",
+  "deployedAt": "2026-09-22T18:56:02-03:00",
+  "notes": "Relatório gerencial por início da vigência, filtro de período e remoção do inventário inicial"
 }
