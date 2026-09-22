@@ -11,6 +11,9 @@ Aplicativo web responsivo e instalável (PWA) para administrar clientes, planos,
 - Assinaturas ligando cliente e plano, com situação automática
 - Assinaturas com cadastro integral do início da vigência, vencimento e valor contratado
 - Relatório gerencial com faturamento por início da vigência e filtros de período, plano e situação
+- Receita recorrente mensalizada, com comparação à média histórica de entradas
+- Cadastro de custos e despesas com opções sugeridas e descrição livre
+- Fluxo de caixa mensal com faturamento, custos, resultado líquido e margem operacional
 - Calendário mensal de vencimentos
 - Mensagens personalizadas de renovação pelo WhatsApp (5 dias antes, no vencimento e 1 dia depois)
 - Backup e restauração em JSON

@@ -36,3 +36,7 @@ body:has(.login-screen:not(.hidden)){height:100dvh;overflow:hidden}
 @media(max-width:760px){.calendar-legend{justify-content:flex-start;gap:8px 12px;margin-bottom:12px}.calendar-legend span{font-size:.7rem}}
 .badge.scheduled{background:rgba(9,156,255,.14);color:#8ed1ff}
 .dialog-actions{flex-wrap:wrap}
+.cost-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cash-positive{color:var(--green)}
+.cash-negative{color:#ff8b9a}
+@media(max-width:600px){.cost-metrics{grid-template-columns:1fr}}
