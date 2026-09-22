@@ -6,7 +6,7 @@ html,body{max-width:100%;overflow-x:hidden}
 .local-access-button:hover{transform:translateY(-2px);border-color:var(--yellow);box-shadow:0 15px 36px rgba(25,168,255,.2)}
 .local-access-button>span:first-child{display:grid;place-items:center;width:37px;height:37px;flex:0 0 37px;border-radius:50%;background:linear-gradient(135deg,var(--pink),#ff334f);font-size:.82rem;padding-left:2px}
 .local-access-button strong,.local-access-button small{display:block}.local-access-button small{margin-top:2px;color:#b6c8dc;font-weight:600;font-size:.74rem}
-.brand img{object-fit:cover;box-shadow:0 0 20px rgba(25,168,255,.18)}
+.brand img{object-fit:contain;box-shadow:0 10px 28px rgba(0,0,0,.38),0 0 28px rgba(25,168,255,.2)}
 @keyframes brand-in{from{opacity:0;transform:translateY(-8px) scale(.985)}to{opacity:1;transform:none}}
 .content,.card,.table-wrap,.form-grid,.form-grid>label{min-width:0}
 .table-wrap{overflow-x:hidden}
