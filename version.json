@@ -1,5 +1,5 @@
 {
-  "version": "1.1.12",
-  "deployedAt": "2026-09-21T22:29:03-03:00",
-  "notes": "Exclusão de cliente na edição com proteção de contratos ativos e histórico encerrado"
+  "version": "1.1.13",
+  "deployedAt": "2026-09-21T23:38:30-03:00",
+  "notes": "Exclusão na edição de planos e assinaturas, valores brasileiros com duas casas e planos em ordem alfabética"
 }
