@@ -1,5 +1,5 @@
-const CACHE='dhplay-v1.1.24';
-const ASSETS=['./','./index.html','./styles.css?v=1.1.24','./responsive.css?v=1.1.24','./reports.css?v=1.1.24','./updates.css?v=1.1.24','./app.js?v=1.1.24','./qr-code.js?v=1.1.24','./offline-db.js?v=1.1.24','./update-checker.js?v=1.1.24','./version.json','./supabase-config.js?v=1.1.24','./manifest.webmanifest?v=1.1.24','./icon-192.png?v=1.1.24','./icon-512.png?v=1.1.24','./icon-maskable-512.png?v=1.1.24','./dhplay-banner-v3.webp?v=1.1.24'];
+const CACHE='dhplay-v1.1.25';
+const ASSETS=['./','./index.html','./styles.css?v=1.1.25','./responsive.css?v=1.1.25','./reports.css?v=1.1.25','./updates.css?v=1.1.25','./app.js?v=1.1.25','./qr-code.js?v=1.1.25','./offline-db.js?v=1.1.25','./update-checker.js?v=1.1.25','./version.json','./supabase-config.js?v=1.1.25','./manifest.webmanifest?v=1.1.25','./icon-192.png?v=1.1.25','./icon-512.png?v=1.1.25','./icon-maskable-512.png?v=1.1.25','./dhplay-banner-v3.webp?v=1.1.25'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request).then(r=>r||caches.match('./index.html'))));});
