@@ -1,5 +1,5 @@
 {
-  "version": "1.1.23",
-  "deployedAt": "2026-09-23T08:00:00-03:00",
-  "notes": "Filtro anual e total no fluxo de caixa; WhatsApp Web no computador"
+  "version": "1.1.24",
+  "deployedAt": "2026-09-23T08:20:00-03:00",
+  "notes": "Plano e PIX separados no envio pelo WhatsApp"
 }
