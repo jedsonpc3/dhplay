@@ -1,5 +1,5 @@
 {
-  "version": "1.1.28",
+  "version": "1.1.29",
   "deployedAt": "2026-10-07T11:00:00-03:00",
-  "notes": "Painel exibe todos os contratos que vencem entre hoje e os proximos 5 dias, inclusive os ja renovados."
+  "notes": "Painel do WhatsApp exibe mensagens para todos os contratos que vencem entre hoje e os proximos 5 dias."
 }
