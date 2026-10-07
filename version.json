@@ -1,5 +1,5 @@
 {
-  "version": "1.1.30",
+  "version": "1.1.31",
   "deployedAt": "2026-10-07T11:00:00-03:00",
-  "notes": "Sincroniza a lista de vencimentos do WhatsApp com o painel de renovacao e recarrega a PWA apos atualizacoes."
+  "notes": "Alerta renovacoes antecipadas e inicia renovacoes atrasadas na data atual, mantendo as datas editaveis."
 }
